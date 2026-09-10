@@ -24,8 +24,7 @@ async function complete(messages, schema, signal) {
         "X-OpenRouter-Title": "Appwrite support chatbot",
       },
       body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || "openai/gpt-4.1-mini",
-        temperature: 0,
+        model: process.env.OPENROUTER_MODEL || "openai/gpt-5.6-luna",
         max_tokens: 850,
         messages,
         response_format: {

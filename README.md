@@ -6,7 +6,7 @@ Harbor Help answers questions using 40 help articles and FAQs about a fictional 
 
 - Node.js 22 or later and pnpm 10.
 - An Appwrite project with VectorsDB, Functions, and Sites.
-- An OpenRouter API key with credit for `openai/gpt-4.1-mini`, or another model that supports structured outputs.
+- An OpenRouter API key with credit for `openai/gpt-5.6-luna`, or another model that supports structured outputs.
 
 ## Create the knowledge base
 
@@ -56,7 +56,7 @@ Configure these Function variables before deployment:
 | `APPWRITE_DATABASE_ID`   | `support`             | No     |
 | `APPWRITE_COLLECTION_ID` | `articles`            | No     |
 | `OPENROUTER_API_KEY`     | Your provider key     | Yes    |
-| `OPENROUTER_MODEL`       | `openai/gpt-4.1-mini` | No     |
+| `OPENROUTER_MODEL`       | `openai/gpt-5.6-luna` | No     |
 
 For a manual deployment, package the Function from the repository root:
 
