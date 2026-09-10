@@ -1,0 +1,282 @@
+[
+  {
+    "id": "create-workspace",
+    "title": "Create your first workspace",
+    "category": "Getting started",
+    "kind": "article",
+    "body": "A workspace contains your team, projects, and billing settings. Select New workspace from the workspace switcher, enter a name, and select Create. The creator becomes the workspace owner. Each workspace has separate members and billing. You can belong to several workspaces with the same account."
+  },
+  {
+    "id": "invite-members",
+    "title": "Invite people to your workspace",
+    "category": "Teams",
+    "kind": "article",
+    "body": "Workspace owners and admins can invite members. Open Workspace settings, select Members, and choose Invite members. Enter an email address and choose Admin, Member, or Guest. Invitations expire after seven days. A guest must be assigned to specific projects and cannot browse the rest of the workspace. Pending invitations can be revoked or resent from Members."
+  },
+  {
+    "id": "workspace-roles",
+    "title": "Understand workspace roles",
+    "category": "Teams",
+    "kind": "article",
+    "body": "Owners manage billing, delete the workspace, and transfer ownership. Admins manage projects and membership but cannot delete the workspace or change ownership. Members create and edit tasks in projects they can access. Guests access only projects they are explicitly invited to. Only an owner can promote another person to owner."
+  },
+  {
+    "id": "guest-access",
+    "title": "Give a client access to one project",
+    "category": "Teams",
+    "kind": "faq",
+    "body": "Invite the client as a Guest from Workspace settings > Members, then select the project they should access. Guests can read tasks, comment, and download attachments within assigned projects. They cannot create projects, invite people, view workspace billing, or access unassigned projects. Remove their project membership to revoke access."
+  },
+  {
+    "id": "remove-member",
+    "title": "Remove a workspace member",
+    "category": "Teams",
+    "kind": "article",
+    "body": "Owners and admins can remove members from Workspace settings > Members. Select the member and choose Remove. Their access ends immediately, but their existing comments and uploaded files remain attributed to them. Tasks assigned to the removed member become unassigned. Reassign important work before removing someone."
+  },
+  {
+    "id": "transfer-ownership",
+    "title": "Transfer workspace ownership",
+    "category": "Teams",
+    "kind": "article",
+    "body": "Only the current owner can transfer ownership. Open Workspace settings > Members, select an existing admin, and choose Transfer ownership. Confirm with your password. The new owner gains billing and deletion rights; the previous owner becomes an admin. You must transfer ownership before leaving a workspace you own."
+  },
+  {
+    "id": "reset-password",
+    "title": "Reset a forgotten password",
+    "category": "Account",
+    "kind": "article",
+    "body": "Select Forgot password on the sign-in page and enter your account email address. Harbor sends a reset link that expires after 30 minutes. If the email does not arrive, check spam and confirm the address. Passwords must contain at least 12 characters. Creating a new password signs out your other sessions."
+  },
+  {
+    "id": "change-email",
+    "title": "Change your account email",
+    "category": "Account",
+    "kind": "article",
+    "body": "Open Account settings > Profile and select Change email. Enter the new address and your current password. Verify the new address using the email Harbor sends there. Your sign-in address changes only after verification. Workspace memberships and task assignments stay with your account."
+  },
+  {
+    "id": "two-factor",
+    "title": "Enable two-factor authentication",
+    "category": "Security",
+    "kind": "article",
+    "body": "Open Account settings > Security and select Enable two-factor authentication. Scan the QR code with an authenticator app and enter the six-digit code. Download the recovery codes and store them somewhere safe. Each recovery code works once. Harbor supports authenticator apps, but does not support SMS verification."
+  },
+  {
+    "id": "lost-authenticator",
+    "title": "Sign in after losing your authenticator",
+    "category": "Security",
+    "kind": "faq",
+    "body": "On the verification screen choose Use a recovery code. Enter one of the recovery codes saved when you enabled two-factor authentication. After signing in, replace your authenticator in Account settings > Security. If you have neither the authenticator nor recovery codes, contact support for account recovery. Support does not disable verification based on an email request alone."
+  },
+  {
+    "id": "manage-sessions",
+    "title": "Review and end account sessions",
+    "category": "Security",
+    "kind": "article",
+    "body": "Account settings > Security > Sessions lists signed-in devices with their most recent activity. Choose Sign out beside a device to end its session. Sign out all other sessions leaves your current session active. If you see an unfamiliar device, end its session and change your password."
+  },
+  {
+    "id": "create-project",
+    "title": "Create a project",
+    "category": "Projects",
+    "kind": "article",
+    "body": "Select New project in your workspace, enter a name, and choose a blank project or template. Choose Private to limit access to invited project members, or Workspace to make it visible to workspace members. Guests always need an explicit invitation. Project names can be changed later in Project settings."
+  },
+  {
+    "id": "archive-project",
+    "title": "Archive a completed project",
+    "category": "Projects",
+    "kind": "article",
+    "body": "Open Project settings and select Archive project. Archived projects disappear from active navigation but preserve tasks, comments, and files. Archived projects are read-only. Owners and admins can restore them from Projects > Archived. Archiving does not delete the project and does not remove its storage usage."
+  },
+  {
+    "id": "delete-project",
+    "title": "Delete a project permanently",
+    "category": "Projects",
+    "kind": "article",
+    "body": "A workspace owner or admin can delete a project from Project settings > Delete project. Confirm by typing the project name. The project enters a 14-day recovery period, during which an owner can restore it from Workspace settings > Deleted projects. After 14 days, its tasks, comments, and files are permanently deleted."
+  },
+  {
+    "id": "project-templates",
+    "title": "Reuse a project template",
+    "category": "Projects",
+    "kind": "article",
+    "body": "Open a project menu and select Save as template to reuse its task structure. Templates include task titles, descriptions, statuses, and relative due dates. They do not include comments, attachments, or member assignments. When creating a project, select the template and choose a start date to calculate due dates."
+  },
+  {
+    "id": "create-task",
+    "title": "Create and assign a task",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "Select Add task in any project. Enter a title, description, assignee, and optional due date. A task has one assignee but can have multiple followers. Followers receive updates without becoming responsible for completion. Tasks start in To do and can move to In progress or Done."
+  },
+  {
+    "id": "subtasks",
+    "title": "Break work into subtasks",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "Open a task and select Add subtask. Each subtask can have its own assignee and due date. Completing all subtasks does not automatically complete the parent task. Harbor supports one level of subtasks. Use linked tasks for work that needs a deeper hierarchy."
+  },
+  {
+    "id": "recurring-tasks",
+    "title": "Set up a recurring task",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "Open a task, select its due date, and choose Repeat. Available schedules are daily, weekly, and monthly. Harbor creates the next occurrence when the current task is completed. The new task keeps its title, description, assignee, and checklist, but not comments or attachments. Recurring tasks are available on the Team plan."
+  },
+  {
+    "id": "task-dependencies",
+    "title": "Mark a task as blocked",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "Open a task and choose Dependencies > Blocked by. Select a task in the same project. Harbor shows a blocked indicator until the dependency is completed. A dependency does not prevent someone from manually completing the blocked task. Circular dependencies are rejected."
+  },
+  {
+    "id": "task-history",
+    "title": "Find changes made to a task",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "The Activity tab inside a task records status, assignee, due date, and description changes. Each entry includes the actor and timestamp. Task history is retained for 30 days on Free and 365 days on Team. Comments remain visible until explicitly deleted."
+  },
+  {
+    "id": "restore-task",
+    "title": "Restore an accidentally deleted task",
+    "category": "Tasks",
+    "kind": "faq",
+    "body": "Open the project menu and select Deleted tasks. Project members with edit access can restore tasks within 14 days of deletion. Restoring a task restores its comments and attachments. After the recovery period, a deleted task cannot be restored."
+  },
+  {
+    "id": "upload-files",
+    "title": "Attach files to a task",
+    "category": "Files",
+    "kind": "article",
+    "body": "Open a task and drag files into Attachments, or select Upload file. Each file can be up to 25 MB on Free and 250 MB on Team. Workspace storage is 1 GB on Free and 100 GB on Team. Executable files are blocked. Attachments inherit the access permissions of their project."
+  },
+  {
+    "id": "storage-full",
+    "title": "What happens when storage is full?",
+    "category": "Files",
+    "kind": "faq",
+    "body": "Existing files stay accessible when a workspace reaches its storage limit, but new uploads are blocked. Owners and admins can review usage in Workspace settings > Storage. Delete unneeded attachments or upgrade the plan to make room. Archiving projects does not free storage because their attachments are retained."
+  },
+  {
+    "id": "export-project",
+    "title": "Export a project as CSV",
+    "category": "Import and export",
+    "kind": "article",
+    "body": "Open your project, select the three-dot menu, and choose Export > CSV. The export includes task titles, descriptions, statuses, assignees, due dates, and labels. Comments and file attachments are not included. Owners, admins, and project members can export; guests cannot. Exports containing more than 5,000 tasks are prepared in the background, with a download link sent by email. Download links expire after 24 hours."
+  },
+  {
+    "id": "import-csv",
+    "title": "Import tasks from a CSV file",
+    "category": "Import and export",
+    "kind": "article",
+    "body": "In a project, select Import > CSV and upload a UTF-8 file. Map your columns to Title, Description, Status, Assignee email, and Due date. Title is required and dates use YYYY-MM-DD. Each import accepts up to 5,000 rows and a 10 MB file. Preview validation errors before confirming. Unknown assignee emails leave tasks unassigned. Importing the same file again creates additional tasks."
+  },
+  {
+    "id": "export-workspace",
+    "title": "Download workspace data",
+    "category": "Import and export",
+    "kind": "article",
+    "body": "Workspace owners can request a data export in Workspace settings > Data > Export workspace. The archive contains project and task JSON, comments, and attachments. Harbor emails the owner when it is ready. The download link expires after 24 hours. A workspace can request one full export per day."
+  },
+  {
+    "id": "free-plan",
+    "title": "What is included in the Free plan?",
+    "category": "Billing",
+    "kind": "faq",
+    "body": "The Harbor Free plan includes one workspace with up to five members, three active projects, and 1 GB of file storage. Guests count toward the five-member limit. Archived projects do not count toward the active-project limit. The Free plan does not include recurring tasks, Slack integration, or the audit log."
+  },
+  {
+    "id": "team-plan",
+    "title": "What is included in the Team plan?",
+    "category": "Billing",
+    "kind": "faq",
+    "body": "The Harbor Team plan costs $12 per member per month when billed monthly or $10 per member per month when billed annually. It includes unlimited active projects, 100 GB workspace storage, recurring tasks, Slack integration, and the audit log. Guests are free on Team. Prices are in USD and exclude applicable taxes."
+  },
+  {
+    "id": "upgrade-plan",
+    "title": "Upgrade your workspace plan",
+    "category": "Billing",
+    "kind": "article",
+    "body": "Only the workspace owner can change the plan. Open Workspace settings > Billing > Change plan, choose Team, and select monthly or annual billing. Upgrading takes effect immediately and the first charge is prorated for the remaining billing period. Billing is per workspace; upgrading one does not upgrade others."
+  },
+  {
+    "id": "cancel-plan",
+    "title": "Cancel a paid subscription",
+    "category": "Billing",
+    "kind": "article",
+    "body": "The workspace owner can open Workspace settings > Billing > Cancel subscription. Team features remain available until the end of the paid billing period. The workspace then moves to Free. If it exceeds Free limits, existing content remains readable, but creating projects, adding members, and uploading files may be restricted until usage is reduced."
+  },
+  {
+    "id": "download-invoice",
+    "title": "Download an invoice",
+    "category": "Billing",
+    "kind": "faq",
+    "body": "Workspace owners can download invoices from Workspace settings > Billing > Invoices. Select an invoice and choose Download PDF. Update the billing address and tax ID before the next invoice is issued. Changes to billing details apply to future invoices."
+  },
+  {
+    "id": "failed-payment",
+    "title": "Resolve a failed payment",
+    "category": "Billing",
+    "kind": "article",
+    "body": "If a payment fails, Harbor emails the workspace owner and retries the card over a seven-day grace period. Team features remain active during that period. Update the payment method in Workspace settings > Billing. If payment still fails after seven days, the workspace becomes read-only until payment succeeds. Data is not deleted because of a failed payment."
+  },
+  {
+    "id": "slack-integration",
+    "title": "Connect Harbor to Slack",
+    "category": "Integrations",
+    "kind": "article",
+    "body": "On the Team plan, open Workspace settings > Integrations > Slack and select Connect. Authorize a Slack workspace and choose the destination channel for each Harbor project. Notifications can include new tasks, completed tasks, and mentions. Only owners and admins can configure the integration. Private task details are visible to anyone in the selected Slack channel, so choose channels carefully."
+  },
+  {
+    "id": "github-integration",
+    "title": "Link a GitHub pull request to a task",
+    "category": "Integrations",
+    "kind": "article",
+    "body": "Add a GitHub pull request URL to the Links section of a Harbor task. Harbor displays the pull request title and whether it is open, merged, or closed after the GitHub integration is authorized. A merged pull request does not automatically complete the task. Repository access follows the permissions granted to the integration."
+  },
+  {
+    "id": "webhooks",
+    "title": "Receive project events with webhooks",
+    "category": "Integrations",
+    "kind": "article",
+    "body": "Workspace admins can add a webhook under Workspace settings > Integrations > Webhooks. Enter an HTTPS endpoint and select task.created, task.updated, or task.completed. Harbor signs requests using the configured webhook secret. Failed deliveries are retried three times over 15 minutes. Delivery history is available for seven days. Webhooks are available on Team."
+  },
+  {
+    "id": "notification-settings",
+    "title": "Control email notifications",
+    "category": "Notifications",
+    "kind": "article",
+    "body": "Open Account settings > Notifications to choose emails for assignments, mentions, and approaching due dates. You can choose immediate delivery or a daily digest sent at 09:00 in your account timezone. Muting a project stops project activity emails, but direct mentions still arrive unless mention notifications are disabled."
+  },
+  {
+    "id": "timezone",
+    "title": "Change your timezone",
+    "category": "Account",
+    "kind": "faq",
+    "body": "Set your timezone under Account settings > Preferences. Harbor displays timestamps and schedules your daily notification digest using that timezone. Task due dates without a time remain the same calendar date for everyone. Changing timezone does not change another member's preferences."
+  },
+  {
+    "id": "search-tasks",
+    "title": "Search across your projects",
+    "category": "Tasks",
+    "kind": "article",
+    "body": "Use the search field at the top of the workspace to search task titles and descriptions. Filter results by assignee, status, label, or project. Search returns only tasks you have permission to access. Archived projects are excluded unless Include archived is selected."
+  },
+  {
+    "id": "audit-log",
+    "title": "Review workspace security activity",
+    "category": "Security",
+    "kind": "article",
+    "body": "The Team plan audit log records membership changes, role updates, exports, and integration changes. Owners and admins can open Workspace settings > Security > Audit log. Entries are retained for 365 days and can be exported as CSV. Task edits appear in task activity, not the workspace audit log."
+  },
+  {
+    "id": "offline-support",
+    "title": "Can I work offline?",
+    "category": "Getting started",
+    "kind": "faq",
+    "body": "Harbor requires an internet connection to save changes. Previously opened tasks may remain visible while offline, but changes are not queued for later synchronization. Reconnect before editing tasks to ensure your work is saved. Harbor does not offer an offline desktop mode."
+  }
+]
