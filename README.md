@@ -24,7 +24,7 @@ Create a seeding API key with these scopes:
 ```sh
 git clone https://github.com/appwrite-community/support-chatbot.git
 cd support-chatbot
-pnpm install --frozen-lockfile
+pnpm install
 cp .env.example .env
 ```
 
@@ -92,7 +92,7 @@ The browser calls `Functions.createExecution` and displays its answer and verifi
 
 ## Deploy on Appwrite Sites
 
-Create a Site using Vite. Connect a fork of this repository, with the root directory left at the repository root. Use `pnpm install --frozen-lockfile` for installation, `pnpm build` for the build, and `dist` for the output directory. Choose static rendering and set the fallback file to `index.html` so help article links work on refresh.
+Create a Site using Vite. Connect a fork of this repository, with the root directory left at the repository root. Use `pnpm install` for installation, `pnpm build` for the build, and `dist` for the output directory. Choose static rendering and set the fallback file to `index.html` so help article links work on refresh.
 
 Set `VITE_APPWRITE_ENDPOINT`, `VITE_APPWRITE_PROJECT_ID`, and `VITE_APPWRITE_FUNCTION_ID` as Site variables before building. Choose an available Appwrite subdomain. Add that hostname as a Web app in the project if it is not already registered.
 
