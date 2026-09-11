@@ -1,0 +1,26 @@
+{
+  "projectId": "<PROJECT_ID>",
+  "endpoint": "https://<REGION>.cloud.appwrite.io/v1",
+  "functions": [
+    {
+      "$id": "support-chat",
+      "name": "Support chatbot",
+      "runtime": "node-22",
+      "execute": [
+        "any"
+      ],
+      "enabled": true,
+      "logging": true,
+      "events": [],
+      "schedule": "",
+      "timeout": 60,
+      "entrypoint": "src/main.js",
+      "commands": "npm install --omit=dev",
+      "path": "functions/chat",
+      "scopes": [
+        "embeddings.write",
+        "vectorsdb.documents.read"
+      ]
+    }
+  ]
+}

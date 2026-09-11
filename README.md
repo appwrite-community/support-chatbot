@@ -62,21 +62,12 @@ Deploy the Function through **GitHub** or the **Appwrite CLI**.
 
 For GitHub, fork the companion repository and connect your fork to the Function under **Settings > Configuration > Git settings**. Set the production branch to `main` and the root directory to `functions/chat`. Use `src/main.js` as the entrypoint and `npm install --omit=dev` as the build command. Pushing a commit to `main` creates, builds, and activates a deployment. See [deploying Functions from Git](https://appwrite.io/docs/products/functions/deploy-from-git).
 
-For the CLI, [install the Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation), then run these commands from your local repository root:
+For the CLI, install the [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation) and set `projectId` and `endpoint` in the supplied `appwrite.config.json`. From the project directory, run:
 
 ```sh
 appwrite login
-appwrite init project
-appwrite pull functions --no-code
-```
-
-Select your project and the existing `support-chat` Function when prompted. In the generated `appwrite.config.json`, set that Function's `path` to `functions/chat`, `entrypoint` to `src/main.js`, and `commands` to `npm install --omit=dev`. Then deploy it:
-
-```sh
 appwrite push functions --function-id support-chat --activate
 ```
-
-The CLI packages and uploads the Function code. See the [CLI Functions guide](https://appwrite.io/docs/tooling/command-line/functions) for configuration details.
 
 The runtime supplies `APPWRITE_FUNCTION_API_ENDPOINT`, `APPWRITE_FUNCTION_PROJECT_ID`, and the `x-appwrite-key` request header. Do not copy the seeding key into the Function.
 
