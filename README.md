@@ -67,13 +67,13 @@ For the CLI, [install the Appwrite CLI](https://appwrite.io/docs/tooling/command
 ```sh
 appwrite login
 appwrite init project
-appwrite pull functions
+appwrite pull functions --no-code
 ```
 
 Select your project and the existing `support-chat` Function when prompted. In the generated `appwrite.config.json`, set that Function's `path` to `functions/chat`, `entrypoint` to `src/main.js`, and `commands` to `npm install --omit=dev`. Then deploy it:
 
 ```sh
-appwrite push functions --function-id support-chat
+appwrite push functions --function-id support-chat --activate
 ```
 
 The CLI packages and uploads the Function code. See the [CLI Functions guide](https://appwrite.io/docs/tooling/command-line/functions) for configuration details.
