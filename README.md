@@ -58,13 +58,27 @@ Configure these Function variables before deployment:
 | `OPENROUTER_API_KEY`     | Your provider key     | Yes    |
 | `OPENROUTER_MODEL`       | `openai/gpt-5.6-luna` | No     |
 
-For a manual deployment, package the Function from the repository root:
+Deploy the Function through **GitHub** or the **Appwrite CLI**.
+
+For GitHub, fork the companion repository and connect your fork to the Function under **Settings > Configuration > Git settings**. Set the production branch to `main` and the root directory to `functions/chat`. Use `src/main.js` as the entrypoint and `npm install --omit=dev` as the build command. Pushing a commit to `main` creates, builds, and activates a deployment. See [deploying Functions from Git](https://appwrite.io/docs/products/functions/deploy-from-git).
+
+For the CLI, [install the Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation), then run these commands from your local repository root:
 
 ```sh
-tar -czf function.tar.gz -C functions/chat package.json src
+appwrite login
+appwrite init project
+appwrite pull functions
 ```
 
-Upload `function.tar.gz` through Create deployment and activate it once ready. The runtime supplies `APPWRITE_FUNCTION_API_ENDPOINT`, `APPWRITE_FUNCTION_PROJECT_ID`, and the `x-appwrite-key` request header. Do not copy the seeding key into the Function.
+Select your project and the existing `support-chat` Function when prompted. In the generated `appwrite.config.json`, set that Function's `path` to `functions/chat`, `entrypoint` to `src/main.js`, and `commands` to `npm install --omit=dev`. Then deploy it:
+
+```sh
+appwrite push functions --function-id support-chat
+```
+
+The CLI packages and uploads the Function code. See the [CLI Functions guide](https://appwrite.io/docs/tooling/command-line/functions) for configuration details.
+
+The runtime supplies `APPWRITE_FUNCTION_API_ENDPOINT`, `APPWRITE_FUNCTION_PROJECT_ID`, and the `x-appwrite-key` request header. Do not copy the seeding key into the Function.
 
 ## Run the interface locally
 
@@ -82,13 +96,7 @@ Create a Site using Vite. Connect a fork of this repository, with the root direc
 
 Set `VITE_APPWRITE_ENDPOINT`, `VITE_APPWRITE_PROJECT_ID`, and `VITE_APPWRITE_FUNCTION_ID` as Site variables before building. Choose an available Appwrite subdomain. Add that hostname as a Web app in the project if it is not already registered.
 
-For a manual deployment:
-
-```sh
-tar -czf site.tar.gz package.json pnpm-lock.yaml tsconfig.json vite.config.ts index.html src data
-```
-
-Upload `site.tar.gz` as a source deployment with the same build settings. The Function and Site are deployed separately. Update the vector documents with `pnpm seed` and redeploy the Site after changing articles so the source pages match the retrieved text.
+Push changes to the connected production branch to deploy the Site. The Function and Site are deployed separately. Update the vector documents with `pnpm seed` and redeploy the Site after changing articles so the source pages match the retrieved text.
 
 ## Verification
 
